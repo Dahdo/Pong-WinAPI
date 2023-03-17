@@ -1,0 +1,150 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAIN_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&New Game\tF2",               ID_NEWGAME
+        MENUITEM "&Exit\tAlt+F4",               ID_EXIT
+    END
+    POPUP "Background"
+    BEGIN
+        MENUITEM "&Color\tCtrl+C",              ID_BACKGROUND_COLOR
+        MENUITEM "&Bitmap...\tCtrl+B",          ID_BACKGROUND_BITMAP
+        MENUITEM "&Tile\tCtrl+T",               ID_BACKGROUND_TILE, INACTIVE
+        MENUITEM "&Stretch\tCtrl+S",            ID_BACKGROUND_STRETCH, INACTIVE
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About...",                    ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_DIALOG DIALOGEX 0, 0, 223, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,58,50,14
+    LTEXT           "WinAPI Lab1 @2023",IDC_STATIC,69,31,97,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    ID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ID_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 60, 40,
+    0, 0, 0, 0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS
+BEGIN
+    VK_F4,          ID_EXIT,                VIRTKEY, ALT, NOINVERT
+    VK_F2,          ID_NEWGAME,             VIRTKEY, NOINVERT
+    "C",            ID_BACKGROUND_COLOR,    VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_BACKGROUND_BITMAP,   VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_BACKGROUND_TITLE,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_BACKGROUND_STRETCH,  VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
